@@ -130,9 +130,16 @@ body{
     background-color: var(--secundary-background-color);
 
 }
-#home-page .content .display p{
+#home-page .content .display input{
     font-size: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
 }
+#home-page .content .display input:disabled{
+    color: var(--text-color);
+    text-align: end;
+}
+
 #home-page .content .display span{
     font-size: 16px;
     color: var(--secundary-text-color);
