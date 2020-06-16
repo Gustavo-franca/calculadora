@@ -1,14 +1,12 @@
 
-define(['./Display'],(display) =>{
-    console.log(display);
-      
+define(['./Display','../lib/keymap'],(display,keymap) =>{
+      console.log(keymap);
        
     
         return (  () =>{
             var options = {}
             /*numeros de 0 a 9 */
             for(let i = 0 ; i < 10; i++){
-                console.log(i)
                options[i] = {
                     index: ()=>{ 
                         display.insert(i);
@@ -16,7 +14,7 @@ define(['./Display'],(display) =>{
                 }
             }
             /* backspace */ 
-                options["<<"] = {
+                options[`${keymap['Backspace']}`] = {
                     index: ()=>{
                         display.remove();
                     }
