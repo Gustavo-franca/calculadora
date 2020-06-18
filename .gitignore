@@ -1,6 +1,6 @@
 draft.html
 README.md
 
-src/lib/r.js
-src/lib/require.js
+Public/lib/r.js
+Public/lib/require.js
 node_modules
