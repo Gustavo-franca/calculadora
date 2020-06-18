@@ -1,6 +1,6 @@
 requirejs.config({
     //By default load any module IDs from js/lib
-    baseUrl: 'src',
+    baseUrl: 'Public',
     //except, if the module ID starts with "app",
     //load it from the js/app directory. paths
     //config is relative to the baseUrl, and
@@ -25,12 +25,12 @@ function   (executeSelectedOption,keymap) {
         }
     }
     /*escutando os teclas do teclado */
-    document.body.onkeydown = handlekeydown;
+    document.addEventListener('keydown',handlekeydown);
     /*tratando as teclas do teclado*/
     function handlekeydown(event){
         event = event || window.event;
         var key = event.key;
-        if (event.key != null && event.key === 'Unidentified') {
+        if (key != null && key !== 'Unidentified') {
         handleChosenOption(key);
         }
     }
