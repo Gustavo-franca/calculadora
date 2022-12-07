@@ -10,7 +10,7 @@
     "collection-map": "^1.0.0",
     "define-property": "^2.0.2",
     "error-ex": "^1.3.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "extend-shallow": "^3.0.2",
     "fragment-cache": "^0.2.1",
     "fs.realpath": "^1.0.0",
